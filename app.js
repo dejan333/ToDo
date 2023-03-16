@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 //MongoDb Connection
 try {
-  mongoose.connect(`${process.env.DBCONNECT}`)
+  mongoose.connect('mongodb+srv://dejan123:dejan123@dejang.vl7o2.mongodb.net/todo')
   console.log('Successfully connected to DB' .brightYellow);
 }
  catch(error){
